@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML, Lists, Images, Tables & Forms</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Ordered List -->
+    <h1>Introdduction To HTML Lists, Tables, And Forms</h1>
+    <h1>HTML Lists</h1>
+    <ol>
+      <li>software Engineering</li>
+      <li>Web Development</li>
+      <li>Python</li>
+      <li>Database</li>
+      <li>startup Building</li>
+    </ol>
+
+    <!-- An image from pexels.com -->
+    <img src="./img/plp.jpeg" alt="plp logo" width="350" height="350" />
+    <!-- data table -->
+    <h1>HTML Tables</h1>
+    <table border="5">
+      <caption>
+        PLP Instructor's Information
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Course</th>
+        <td>email</td>
+      </tr>
+      <tr>
+        <td colspan="1">Evans mutuku</td>
+        <td>Kenya</td>
+        <td>Python</td>
+        <td>evans@powerlearnprojectafrica.org</td>
+      </tr>
+      <tr>
+        <td>Zablon/Gerald</td>
+        <td>South Africa</td>
+        <td>Database</td>
+        <td>
+          zablon@powerlearnprojectafrica.org <br />
+          gerald@powerlearnprojectafrica.org
+        </td>
+      </tr>
+      <tr>
+        <td>Nelly Alili</td>
+        <td>Kenya</td>
+        <td>Startup</td>
+        <td>plpsoftskills@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Chakin Kim</td>
+        <td>Kenya</td>
+        <td>Software Development</td>
+        <td>charles@powerlearnprojectafrica.org</td>
+      </tr>
+      <tfoot>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Course</th>
+        <td>email</td>
+      </tfoot>
+    </table>
+    <!-- registration form -->
+    <h1>HTML Forms</h1>
+    <form action="" method="post">
+      <!-- Name Field -->
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+      <br /><br />
+
+      <!-- Email Field -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <br /><br />
+
+      <!-- Password Field -->
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        required
+      />
+      <br /><br />
+
+      <!-- Date Field -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+      <br /><br />
+
+      <!-- Gender Radio Buttons -->
+      <label for="gender">Gender:</label>
+      <input type="radio" id="female" name="gender" value="female" required />
+      Female
+      <input type="radio" id="male" name="gender" value="male" required /> Male
+      <input type="radio" id="other" name="gender" value="other" required />
+      Other <br /><br />
+
+      <!-- Hobbies Checkboxes -->
+      <label for="hobbies">Hobbies:</label>
+      <input type="checkbox" id="sports" name="hobbies" value="sports" /> Sports
+      <input type="checkbox" id="music" name="hobbies" value="music" /> Music
+      <input type="checkbox" id="art" name="hobbies" value="art" /> Art
+      <input type="checkbox" id="travel" name="hobbies" value="travel" /> Travel
+      <br /><br />
+
+      <!-- Country Dropdown -->
+      <label for="country">Country:</label>
+      <select name="country" id="country" required>
+        <option value="">Select your country</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Kenya">Kenya</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Togo">Togo</option>
+        <option value="Togo">Cameroon</option>
+        <option value="Togo">Rwanda</option>
+      </select>
+      <br /><br />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
